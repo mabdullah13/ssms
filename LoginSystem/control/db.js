@@ -64,13 +64,13 @@ module.exports.validUser = function(account,call){
         collection.findOne({"username":account.username},(err,items)=>{
             
             if(items == null){
-                status = "user does not exists!";
+                status = "User does not exists!";
             }
             else if(!bcrypt.compareSync(account["password"], items["password"])){
-                status = "invalid password!";
+                status = "Invalid password!";
             }
             else{
-                status = "login successfully";
+                status = "success";
             }
 
             call(status);
