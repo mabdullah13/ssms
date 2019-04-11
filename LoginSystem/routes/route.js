@@ -32,7 +32,7 @@ module.exports = function(app){
             "password":req.body.password
         };
         db.validUser(account,function(m){
-            if (m.indexOf("successfully")){
+            if (m == "success"){
                 res.sendFile(path.resolve(__dirname,'..') + '/public/dashboard.html');
             }
             else{
