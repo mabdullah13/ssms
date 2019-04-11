@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Register Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form method="POST" onsubmit="return validateForm()" action="/">
+        <fieldset>
+            <h1>Register</h1> 
+            <div>
+                <p class="p-register"> Username</p> 
+                <input id="username" name="name" class="input-register" placeholder="Username"  autofocus="true" type="text">
+            </div>
+            <div>
+                <p class="p-register"> Password</p>
+                <input id="password" name="password" class="input-register" placeholder="Password"  autofocus="true" type="password">
+            </div>
+            <div>
+                <p class="p-register">Password(Confirm)</p>
+                <input id="confirm" class="input-register" placeholder="Type your password again"  autofocus="true" type="password">
+            </div>
+            <div>
+                <p class="p-register">E-mail</p>
+                <input id="email" name="email" class="input-register" placeholder="Valid email"  autofocus="true" type="text">
+            </div>
+            <button id="btn_register" class="input-login">Register</button>
+            <input type="button" class="input-login" value="Cancel" onclick="window.location='/';" />    
+        </fieldset>
+        
+    </form>
+    <script src="/script.js"></script>
+</body>
+</html>
